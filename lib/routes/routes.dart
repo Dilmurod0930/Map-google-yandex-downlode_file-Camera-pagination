@@ -7,9 +7,9 @@ class Routess {
   Routess.init();
   Route? onGenerate(RouteSettings settings) {
     var args = settings.arguments;
-    switch (settings.arguments) {
-      case "/":
-        return MaterialPageRoute(builder: (context) => MyHomePage());
+    switch (settings.name) {
+      case "/home":
+        return MaterialPageRoute(builder: (context) => const HomePage());
     }
   }
 }
